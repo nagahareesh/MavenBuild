@@ -3,6 +3,7 @@ pipeline{
     tools {
   maven 'Maven3.6.3'
 }
+    stages{
     stage('Build'){
         steps{
         sh script: 'mvn clean package'
@@ -14,5 +15,5 @@ nexusArtifactUploader artifacts: [[artifactId: 'webapps', classifier: '', file: 
 }
 }
 } 
-    
+} 
 }
