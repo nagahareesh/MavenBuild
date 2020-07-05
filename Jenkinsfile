@@ -16,4 +16,4 @@ nexusArtifactUploader artifacts: [[artifactId: 'webapps', classifier: '', file: 
 }
 } 
 } 
-}
+
